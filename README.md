@@ -111,8 +111,10 @@ The analysis reveals several key insights:
 These results suggest that machine learning models can **capture non-linear volatility dynamics** while remaining consistent with established financial theory.
 
 ---
-```
+
 ## Project Structure
+
+```
 project-root/
 ├── models/
 │ └── saved intermediate datasets
