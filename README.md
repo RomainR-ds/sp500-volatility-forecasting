@@ -1,4 +1,11 @@
-# Volatility Forecasting with Machine Learning
+# S&P 500 Volatility Forecasting with Machine Learning
+
+![SHAP Summary](outputs/shap_summary.png)
+
+![Python](https://img.shields.io/badge/Python-3.x-blue)
+![Machine Learning](https://img.shields.io/badge/Machine%20Learning-Scikit--Learn-orange)
+![Time Series](https://img.shields.io/badge/Time%20Series-Financial%20Modeling-green)
+![Status](https://img.shields.io/badge/Project-Completed-brightgreen)
 
 Financial market volatility plays a central role in **risk management, portfolio allocation, and derivative pricing**.  
 However, forecasting volatility remains challenging due to **non-linear dynamics, regime shifts, and strong persistence in financial markets**.
@@ -9,9 +16,19 @@ Using a structured time-series modeling pipeline, the project evaluates several 
 
 ---
 
+## Dataset
+
+The dataset consists of historical **S&P 500 daily market data**, including price-based indicators and engineered volatility features derived from rolling statistics.
+
+The dataset covers multiple market regimes, allowing the models to be evaluated across both calm and high-volatility periods.
+
+Special care was taken to ensure that **all features are constructed using only past information**, preventing look-ahead bias and preserving the integrity of the forecasting framework.
+
+---
+
 ## Project Objectives
 
-The notebooks aim to address three main questions:
+This project investigates three core questions:
 
 - Can machine learning models **improve volatility prediction** compared to traditional linear models?
 - Which financial indicators **drive volatility forecasts**?
@@ -37,6 +54,9 @@ The notebooks aim to address three main questions:
 ### SHAP Summary
 
 ![SHAP Summary](outputs/shap_summary.png)
+
+This SHAP summary plot highlights the features with the strongest impact on volatility predictions.
+Recent volatility indicators and persistence-related variables appear as the dominant drivers, which aligns with established financial theory on volatility clustering.
 
 ### SHAP Dependence Plot
 
